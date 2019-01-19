@@ -7,16 +7,16 @@
  */
 
 import React, {Component} from 'react';
-
+import {Button} from 'react-native-elements';
+import {CustomHeader} from '../components/header'
 import {Platform, StyleSheet, Text, View,Image} from 'react-native';
 
-export default class Two extends Component<Props> {
+export default class Setting extends Component<Props> {
     render() {
 
         return (
-            <View style={styles.container}>
-                <Text> page two</Text>
-                
+            <View>
+                 <CustomHeader leftIconPress={()=>{this.props.navigation.toggleDrawer();}} title="设置"></CustomHeader>
             </View>
         );
     }
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export {Two}
+export {Setting}
