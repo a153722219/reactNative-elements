@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-
+import { Button,Header} from 'react-native-elements';
 import {Platform, StyleSheet, Text, View,Image} from 'react-native';
 
 
@@ -42,6 +42,7 @@ class MyText extends Component {
 
         return (
             <View style={{alignItems: 'center'}}>
+            
                 <Text style={{opacity:1,color:this.state.color,fontSize:20}}>Hello {this.props.name}!</Text>
             </View>
         );
@@ -58,7 +59,9 @@ export default class One extends Component<Props> {
         };
         return (
             <View style={styles.container}>
+                
                 <Image source={pic} style={{width: 193, height: 110}} />
+                <Button title="Button"></Button>
                 <MyText name="小白"/>
             </View>
         );

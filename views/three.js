@@ -17,6 +17,7 @@ export default class Three extends Component<Props> {
         return (
             <View style={styles.container}>
                 <Text> page three</Text>
+              
             </View>
         );
     }

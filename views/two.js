@@ -10,13 +10,13 @@ import React, {Component} from 'react';
 
 import {Platform, StyleSheet, Text, View,Image} from 'react-native';
 
-
 export default class Two extends Component<Props> {
     render() {
 
         return (
             <View style={styles.container}>
                 <Text> page two</Text>
+                
             </View>
         );
     }
