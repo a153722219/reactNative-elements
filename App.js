@@ -106,7 +106,15 @@ const styles = StyleSheet.create({
     },
 });
 
-const AppNavigator1 = createStackNavigator({ Home:{screen:MyHomeScreen} });
+const AppNavigator1 = createStackNavigator({ 
+    Home:{
+        screen:MyHomeScreen,
+        navigationOptions:{
+            headerLeft:( <Icon
+                name='bars' size={22} color="white" style={{marginLeft:20}}/>)
+        }
+    } 
+});
 const AppNavigator2 = createStackNavigator({ Notifications:{screen:MyNotificationsScreen} });
 
 const MyDrawerNavigator = createDrawerNavigator({
@@ -115,7 +123,7 @@ const MyDrawerNavigator = createDrawerNavigator({
         navigationOptions:{
             drawerLabel: 'Home',
             drawerIcon: ({ tintColor }) => (
-                <Icon name={"home"}/>
+                <Icon name={"home"} size={20}/>
             ),
         }
     },
@@ -125,7 +133,7 @@ const MyDrawerNavigator = createDrawerNavigator({
         navigationOptions:{
             drawerLabel: 'Notifications',
             drawerIcon: ({ tintColor }) => (
-                <Icon name={"bell"}/>
+                <Icon name={"bell"} size={20}/>
             ),
         }
 
